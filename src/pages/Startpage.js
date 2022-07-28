@@ -4,18 +4,18 @@ import InputDate from "../components/InputDate";
 
 const Title = styled.div`
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-  font-size: 40px;
+  font-size: 35px;
   margin-bottom: 0;
   font-style: normal;
   color: #d86a66;
 `;
 const Description = styled.div`
-  font-size: 15px;
+  font-size: 17px;
   margin: 0.3em;
   color: #d86a66;
 `;
 const Text = styled.div`
-  font-size: 13px;
+  font-size: 15px;
   font-weight: normal;
   margin: 0.3em;
 `;

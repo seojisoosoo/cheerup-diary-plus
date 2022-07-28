@@ -4,9 +4,8 @@ import styled from "styled-components";
 const Hr = styled.hr`
   width: 40vh;
   border-width: 1px 0px 0px 0px;
-  height: 1px;
-  margin: 0rm;
-  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
 `;
 
 const Date = styled.input`
