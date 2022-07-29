@@ -1,23 +1,27 @@
 import React from "react";
-import styled, { css } from "styled-components";
-import "./App.css";
+import styled from "styled-components";
 import Startpage from "./pages/Startpage";
-const font = css`
+
+const Font = styled.div`
   font-family: "SangSangShinb7";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.1/SangSangShinb7.woff")
     format("woff");
   font-weight: bold;
 `;
 const Body = styled.div`
-  ${font}
   width: 60vh;
   display: inline-block;
   background-color: antiquewhite;
+  text-align: center;
+  display: flex;
+  justify-content: center;
 `;
 const App = () => {
   return (
     <Body>
-      <Startpage />
+      <Font>
+        <Startpage />
+      </Font>
     </Body>
   );
 };

@@ -1,39 +1,16 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
-const GenderImg = styled.div`
-  display: flex;
-  justify-content: center;
-  height: 15vh;
-`;
-const GenderBox = styled.label`
+const Img = styled.img`
   width: 15vh;
-  height: 15vh;
+  margin: 2vh;
 `;
-const GirlImg = styled.div`
-  content: url(img/girl.PNG);
-  width: 14vh;
-`;
-const BoyImg = styled.div`
-  content: url(img/boy.PNG);
-  width: 14vh;
-`;
-const Input = styled.input``;
-
 const InputGender = () => {
   return (
-    <GenderImg>
-      <GenderBox>
-        <Input type="checkbox" className="gender" id="girl">
-          <GirlImg />
-        </Input>
-      </GenderBox>
-      <GenderBox>
-        <Input type="checkbox" className="gender" id="boy">
-          <BoyImg />
-        </Input>
-      </GenderBox>
-    </GenderImg>
+    <>
+      <Img src="img/girl.png" alt="#" />
+      <Img src="img/boy.png" alt="#" />
+    </>
   );
 };
 

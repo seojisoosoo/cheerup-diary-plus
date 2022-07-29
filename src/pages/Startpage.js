@@ -61,19 +61,9 @@ const Startpage = () => {
       <InputWeather />
       <br />
       <form>
-        <WhiteButton
-          type="text"
-          placeholder="이름을 입력하세요"
-          class="button white"
-          id="name"
-        />
+        <WhiteButton type="text" placeholder="이름을 입력하세요" id="name" />
         <br />
-        <PinkButton
-          type="button"
-          value="응원하기"
-          class="button pink"
-          onclick="printName()"
-        />
+        <PinkButton type="button" value="응원하기" onclick="printName()" />
       </form>
     </>
   );
