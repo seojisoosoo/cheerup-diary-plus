@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import InputDate from "../components/InputDate";
+import InputGender from "../components/InputGender";
 
 const Title = styled.div`
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
@@ -29,6 +30,7 @@ const Startpage = () => {
       <Description>힘든 하루 속 당신을 위한 응원일기!</Description>
       <Text>✽ 날짜와 성별, 날씨를 선택해주세요 ✽</Text>
       <InputDate />
+      <InputGender />
     </>
   );
 };
