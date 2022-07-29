@@ -11,9 +11,9 @@ const Hr = styled.hr`
 const Date = styled.input`
   font-family: "SangSangShinb7";
   color: black;
-  font-size: 15px;
+  font-size: 30px;
   width: 40vh;
-  height: 5vh;
+  height: 7vh;
   text-align: center;
   background-color: transparent;
   border: transparent;
