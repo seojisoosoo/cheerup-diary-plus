@@ -80,7 +80,7 @@ const Startpage = () => {
         <PinkButton
           type="button"
           value="응원하기"
-          onclick={printName("/Resultpage", nameRef)}
+          onclick={printName("/result", nameRef)}
         />
       </form>
     </>

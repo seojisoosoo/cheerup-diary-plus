@@ -1,7 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Startpage from "./pages/Startpage";
-
+import { Route, Routes } from "react-router-dom";
+import Resultpage from "./pages/Resultpage";
 const Font = styled.div`
   font-family: "SangSangShinb7";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.1/SangSangShinb7.woff")
@@ -18,11 +19,14 @@ const Body = styled.div`
 `;
 const App = () => {
   return (
-    <Body>
-      <Font>
-        <Startpage />
-      </Font>
-    </Body>
+    <Routes>
+      <Body>
+        <Font>
+          <Route path="/" element={<Startpage />} />
+          <Route path="/result" element={<Resultpage />} />
+        </Font>
+      </Body>
+    </Routes>
   );
 };
 

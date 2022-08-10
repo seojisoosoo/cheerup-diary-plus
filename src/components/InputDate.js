@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import { useRef } from "react";
 const Hr = styled.hr`
   width: 40vh;
   border-width: 1px 0px 0px 0px;
@@ -20,12 +20,13 @@ const Date = styled.input`
   cursor: pointer;
   margin: 0rm;
 `;
-
 const InputDate = () => {
+  const dateRef = useRef(null);
+
   return (
     <>
       <Hr />
-      <Date type="date" class="date" id="date" />
+      <Date type="date" class="date" id="date" ref={dateRef} />
       <Hr />
     </>
   );
