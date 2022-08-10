@@ -3,7 +3,8 @@ import styled, { css } from "styled-components";
 import InputDate from "../components/InputDate";
 import InputGender from "../components/InputGender";
 import InputWeather from "../components/InputWeather";
-
+import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 const Title = styled.div`
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
   font-size: 55px;
@@ -45,7 +46,15 @@ const PinkButton = styled.input`
   color: white;
   text-align: center;
 `;
+
 const Startpage = () => {
+  const navigate = useNavigate();
+
+  const printName = (url, name) => {
+    navigate(url, { state: name });
+  };
+  const nameRef = useRef(null);
+
   return (
     <>
       <Title>
@@ -61,9 +70,18 @@ const Startpage = () => {
       <InputWeather />
       <br />
       <form>
-        <WhiteButton type="text" placeholder="이름을 입력하세요" id="name" />
+        <WhiteButton
+          type="text"
+          placeholder="이름을 입력하세요"
+          id="name"
+          ref={nameRef}
+        />
         <br />
-        <PinkButton type="button" value="응원하기" onclick="printName()" />
+        <PinkButton
+          type="button"
+          value="응원하기"
+          onclick={printName("/Resultpage", nameRef)}
+        />
       </form>
     </>
   );
